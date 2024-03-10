@@ -1,0 +1,113 @@
+.Container {
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Container h1 {
+    width: 100%;
+    align-content: center;
+    color: rgb(107, 36, 12);
+    align-self: center;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    padding: 60px 0;
+    background: white;
+}
+
+.Slider {
+    animation: 20s slide infinite linear;
+    display: inline-block;
+   
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.Slider img {
+    width: 200px;
+    margin: 0 40px;
+    transition: 0.4s all ease-in-out;
+}
+
+.Wrapper:hover .Slider {
+    animation-play-state: paused;
+}
+
+.Wrapper::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    background: linear-gradient(to left, rgba(255,255,255,0), white);
+    z-index: 2;
+}
+
+.Wrapper::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    background: linear-gradient(to right, rgba(255,255,255,0), white);
+    z-index: 2;
+}
+
+
+.Slider img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 960px) {
+    .Container {
+        padding-top: 50px;
+    }
+
+    .Slider img {
+        width: 150px;
+        margin: 0 30px;
+
+    }
+
+    .Wrapper::before {
+        width: 150px;
+    }
+    
+    .Wrapper::after {
+        width: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Slider img {
+        width: 100px;
+        margin: 0 20px;
+
+    }
+
+    .Wrapper::before {
+        width: 100px;
+    }
+    
+    .Wrapper::after {
+        width: 100px;
+    }
+}

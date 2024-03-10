@@ -1,0 +1,68 @@
+
+
+.container-fluid{
+    margin: 0 100px;
+}
+
+.navbar{
+    padding: 0;
+    background-color: aqua;
+}
+
+@media (max-width: 960px){
+    .container-fluid{
+        margin: 0 30px;
+    }
+}
+
+.Nav-List {
+    font-size: 18px;
+}
+
+.navbar-brand img{
+    width: 60px;
+    
+}
+
+.navbar-brand{
+    padding: 5px 0 0 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+ul li:hover {
+    color: maroon;
+}
+
+
+.nav-item .btn{
+    font-size: 15px;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+
+.nav-item .btn:hover{
+    color: rgb(107, 36, 12);
+    background-color: white;
+    transform: scale(1.06);
+    border: 1px solid black;
+}
+
+@media (max-width: 990px){
+    .nav-item .btn{
+        margin-bottom: 20px;
+    }
+}
+
+
+.fixed-top {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}

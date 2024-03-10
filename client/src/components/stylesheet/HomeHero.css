@@ -1,0 +1,114 @@
+.cover {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("HeroCarousel2.avif");
+    background-size: cover;
+    
+}
+
+.insideContainer {
+    width: 700px;
+    height: 700px;
+    padding: 50px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0)10%, rgba(255,255,255,1)100%);
+    box-shadow: 5px 5px 5px black;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    align-content: center;
+    top: 55%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+
+.insideContainer h1 {
+    font-size: 70px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+
+.insideContainer h3{
+    font-weight: 500;
+    padding-bottom: 70px;
+}
+
+.insideContainer button{
+    font-size: 30px;
+    padding: 10px;
+
+    font-weight: 500;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+
+.insideContainer button:hover {
+    color: rgb(107, 36, 12);
+    background-color: white;
+    transform: scale(1.06);
+}
+
+@media (max-width: 1600px) {
+    .insideContainer {
+        width: 600px;
+        height: 550px;
+    }
+
+    .insideContainer h1 {
+        font-size: 50px;;
+    }
+
+    .insideContainer h3 {
+        font-size: 25px;
+    }
+
+    .insideContainer button{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 980px) {
+    .insideContainer {
+        width: 500px;
+        height: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .insideContainer h1 {
+        font-size: 50px;
+
+        padding-bottom: 20px;
+        padding-top: 50px;
+    }
+    
+    
+    .insideContainer h3{
+        font-size: 20px;
+        padding-bottom: 70px;
+    }
+
+    .insideContainer button{
+        font-size: 20px;
+        padding: 10px;
+        font-weight: 500;
+        border-radius: 0.5rem;
+        background-color: black;
+        color: white;
+        transition: 0.3s all ease-in-out;
+    }
+}
