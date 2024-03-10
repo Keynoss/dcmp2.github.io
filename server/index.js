@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
 const nodemailer = require("nodemailer");
+require('dotenv').config();
 
 
 // Assign Express Funtion to the app variable
@@ -10,10 +11,10 @@ const app = express();
 
 // Database Connection
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "W7301@jqir#",
-    database: "dauloconstruction_api"
+    host: process.env.DB_HOST,
+    user: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DBNAME
 })
 
 // Middlewares
