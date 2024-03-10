@@ -22,7 +22,6 @@ function HomeClients() {
 
     return(
 
-        
         <div className="Container">
             <h1>OUR CLIENTS</h1>
             <div className="Wrapper">
