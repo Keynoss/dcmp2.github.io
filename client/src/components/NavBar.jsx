@@ -40,7 +40,7 @@ export default  function NavBar () {
                         <a className="nav-link active" href="/">HOME</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link active" href="/#about">ABOUT</a>
+                        <a className="nav-link active" href="/about">ABOUT</a>
                         </li>
                        
                         <li className="nav-item dropdown">
@@ -57,14 +57,14 @@ export default  function NavBar () {
                             </ul>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link active" href="/#projects">PROJECTS</a>
+                        <a className="nav-link active" href="/projects">PROJECTS</a>
                         </li>
                 
                     </ul>
                 </div>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul className="navbar-nav">
-                        <li className='nav-item'><a href="/#contact"  className='btn'><MailRoundedIcon></MailRoundedIcon> CONTACT US</a></li>
+                        <li className='nav-item'><a href="/contact"  className='btn'><MailRoundedIcon></MailRoundedIcon> CONTACT US</a></li>
                     </ul>
                 </div>
             </div>
