@@ -119,7 +119,7 @@ function AboutHero() {
 
     const fetchAllServices = async () => {
         try {
-            const response = await axios.get("http://localhost:8000/about");
+            const response = await axios.get("https://dcmp2-github-io.onrender.com/about");
             setAbout(response.data);
 
         } catch (e) {
