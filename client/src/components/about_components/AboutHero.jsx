@@ -119,7 +119,7 @@ function AboutHero() {
 
     const fetchAllServices = async () => {
         try {
-            const response = await axios.get("https://dcmp2-github-io.onrender.com/about");
+            const response = await axios.get("http://localhost:8000/about");
             setAbout(response.data);
 
         } catch (e) {
@@ -148,25 +148,25 @@ function AboutHero() {
                     </Col>
 
                     <Col>
-                        <HeroImg src={`http://localhost:8000/images/${data.cover_img}`} alt={data.alt}/>
+                        <HeroImg src={`http://localhost:8000/images/${data.cover_img}`} alt={data.alt} />
                     </Col>
-                    
+
                 </Row1>
             ))}
 
             {filterCompany.map((data, index) => (
                 <Row2 key={index}>
                     <Col>
-                        <HeroImg src={`http://localhost:8000/images/${data.cover_img}`} alt={data.alt}/>
+                        <HeroImg src={`http://localhost:8000/images/${data.cover_img}`} alt={data.alt} />
                     </Col>
 
                     <Col>
                         <TitleDesc>{data.title}</TitleDesc>
                         <Para>{data.desc}</Para>
-                    
+
                     </Col>
 
-                
+
                 </Row2>
             ))}
         </Container>
