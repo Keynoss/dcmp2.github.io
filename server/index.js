@@ -50,7 +50,9 @@ const sendEmail = (email, first_name, last_name, message_inquiry) => {
     })
 };
 
-
+app.get("/", (req, res) => {
+    res.send("hello")
+})
 
 // Fetching all data
 app.get('/home', (req, res) => {
