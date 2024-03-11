@@ -4,13 +4,14 @@ import axios from "axios";
 import styled from "styled-components";
 
 const Container = styled.div`
-     position: relative;
+    position: relative;
     display: flex;
     width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
     text-align: center;
+
 `
 
 const InsideContainer = styled.div`
@@ -43,6 +44,12 @@ const InsideContainer = styled.div`
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    @media (max-width: 480px) {
+        top: 60%;
+        width: 400px;
+        height: 500px;
+    }
 `
 
 const CoverImg = styled.img`
@@ -66,6 +73,10 @@ const Title = styled.h1`
 
         padding-bottom: 20px;
         padding-top: 45px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 40px;
     }
 `
 

@@ -94,7 +94,6 @@ const Lis = styled.li`
 `
 
 const RightContainer = styled.div`
-    
 `
 
 const TitleDesc = styled.h2`
